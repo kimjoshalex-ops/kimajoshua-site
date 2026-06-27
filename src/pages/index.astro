@@ -1,4 +1,12 @@
+---
+---
 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joshua A Kim</title>
+</head>
 
 <body>
 
@@ -41,133 +49,106 @@
 </body>
 
 <style>
-  /* Paste the CSS here */
-
   body {
-  margin: 0;
-  background: #5F7FA6;
-  color: #ffffff;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-}
+    margin: 0;
+    background: #5F7FA6;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
 
-/* ---------- Navigation ---------- */
+  .navbar {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding: 36px 0;
+    font-size: 1rem;
+  }
 
-.navbar {
-  display: flex;
-  justify-content: center;
-  gap: 4rem;
+  .navbar a {
+    color: rgba(255,255,255,.88);
+    text-decoration: none;
+    transition: 0.2s;
+  }
 
-  padding: 36px 0;
-
-  font-size: 1rem;
-  font-weight: 400;
-  letter-spacing: .03em;
-}
-
-.navbar a {
-  color: rgba(255,255,255,.88);
-  text-decoration: none;
-
-  transition: all .25s ease;
-}
-
-.navbar a:hover {
-  color: white;
-  transform: translateY(-1px);
-}
-
-/* ---------- Layout ---------- */
+  .navbar a:hover {
+    color: white;
+  }
 
 .wrapper {
-  max-width: 1150px;
-
+  max-width: 1100px;
   min-height: calc(100vh - 90px);
-
   margin: 0 auto;
-
-  padding: 0 60px;
+  padding: 0 40px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  gap: 90px;
+  gap: 70px;
 }
-
-/* ---------- Portrait ---------- */
-
-.photo img {
-  width: 340px;
-
-  border-radius: 16px;
-
-  box-shadow:
-    0 18px 45px rgba(0,0,0,.18);
-}
-
-/* ---------- Text ---------- */
-
-.content {
-  max-width: 520px;
-}
-
-h1 {
-  font-size: 3.3rem;
-  font-weight: 500;
-
-  margin: 0;
-}
-
-.subtitle {
-  margin-top: 12px;
-  margin-bottom: 36px;
-
-  font-size: 1.15rem;
-
-  opacity: .82;
-}
-
-p {
-  font-size: 1.1rem;
-  line-height: 1.9;
-
-  margin-bottom: 22px;
-}
-
-.contact {
-  margin-top: 42px;
-
-  font-weight: 500;
-
-  opacity: .92;
-}
-
-/* ---------- Mobile ---------- */
-
-@media (max-width: 900px) {
-
-  .wrapper {
-    flex-direction: column;
-
-    text-align: center;
-
-    gap: 50px;
-
-    padding: 40px 28px 70px;
-  }
 
   .photo img {
-    width: 260px;
+    width: 340px;
+    border-radius: 16px;
+    box-shadow: 0 18px 45px rgba(0,0,0,.18);
   }
 
-  .navbar {
-    gap: 2rem;
-    font-size: .95rem;
+  .content {
+    max-width: 520px;
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 3.3rem;
+    margin: 0;
   }
 
+  .subtitle {
+    margin-top: 12px;
+    margin-bottom: 36px;
+    font-size: 1.15rem;
+    opacity: .82;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    margin-bottom: 22px;
+  }
+
+  .contact {
+    margin-top: 42px;
+    font-weight: 500;
+  }
+
+  @media (max-width: 900px) {
+
+  .wrapper {
+    flex-direction: column;
+    text-align: center;
+
+    gap: 36px;
+
+    padding: 30px 24px 60px;
+    min-height: auto;
+  }
+
+  .photo img {
+    width: 240px;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  .subtitle {
+    font-size: 1.05rem;
+    margin-bottom: 24px;
+  }
+
+  p {
+    font-size: 1.05rem;
+  }
 }
 </style>
+
+</html>
