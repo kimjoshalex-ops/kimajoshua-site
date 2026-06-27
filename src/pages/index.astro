@@ -1,55 +1,106 @@
+---
+
+---
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joshua A Kim</title>
 
     <style>
       body {
-        font-family: Georgia, serif;
-        color: #222;
         margin: 0;
-        background: #fafafa;
+        background: #5E81AC;
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
       }
 
-      .container {
-        max-width: 700px;
-        margin: 80px auto;
-        padding: 20px;
-        text-align: center;
+      .wrapper {
+        max-width: 1100px;
+        min-height: 100vh;
+        margin: 0 auto;
+        padding: 80px 40px;
+
+        display: flex;
+        align-items: center;
+        gap: 80px;
+      }
+
+      .photo img {
+        width: 320px;
+        border-radius: 10px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+      }
+
+      .content {
+        max-width: 550px;
       }
 
       h1 {
-        font-size: 2.0rem;
-        margin-bottom: 10px;
+        font-size: 3rem;
+        margin-bottom: 0.4rem;
       }
 
-      .credentials {
+      .subtitle {
         font-size: 1.2rem;
-        color: #222;
-        margin-bottom: 30px;
+        opacity: 0.85;
+        margin-bottom: 2rem;
       }
 
-      .intro,
       p {
-        font-size: 1.0rem;
-        color: #666;
-        line-height: 1.7;
+        line-height: 1.8;
+        font-size: 1.1rem;
+        margin-bottom: 1.4rem;
+      }
+
+      .contact {
+        margin-top: 3rem;
+      }
+
+      @media (max-width: 900px) {
+        .wrapper {
+          flex-direction: column;
+          text-align: center;
+          gap: 50px;
+          padding: 60px 30px;
+        }
+
+        .photo img {
+          width: 260px;
+        }
       }
     </style>
   </head>
 
   <body>
-    <main class="container">
-      <h1>Joshua A Kim</h1>
+    <main class="wrapper">
 
-      <p class="credentials">
-        MSW Candidate, The Ohio State University, 2028
-      </p>
+      <div class="photo">
+        <img src="/headshot.jpg" alt="Joshua A Kim" />
+      </div>
 
-	  <p class="intro">
-		For all inquiries, please email: kimalexanderjoshua@gmail.com
-	  </p>
+      <div class="content">
+        <h1>Joshua A Kim</h1>
+
+        <p class="subtitle">
+          Future home of my psychotherapy practice
+        </p>
+
+        <p>
+          Welcome, and thank you for visiting.
+        </p>
+
+        <p>
+          I am currently completing my MSW at The Ohio State University.
+          More information about my practice will be available soon.
+        </p>
+
+        <p class="contact">
+          Contact:<br />
+          kimalexanderjoshua@gmail.com
+        </p>
+      </div>
 
     </main>
   </body>
