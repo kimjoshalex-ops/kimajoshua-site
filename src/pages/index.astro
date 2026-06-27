@@ -1,114 +1,173 @@
----
-
----
-<nav>
-  <a href="/">Home</a> |
-  <a href="/about">About</a> |
-  <a href="/contact">Contact</a>
-</nav>
 
 
+<body>
 
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Joshua A Kim</title>
+  <nav class="navbar">
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+  </nav>
 
-    <style>
-      body {
-        margin: 0;
-        background: #5E81AC;
-        color: white;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      }
+  <main class="wrapper">
 
-      .wrapper {
-        max-width: 1100px;
-        min-height: 100vh;
-        margin: 0 auto;
-        padding: 80px 40px;
+    <div class="photo">
+      <img src="/jak_shot.jpg" alt="Joshua A Kim" />
+    </div>
 
-        display: flex;
-        align-items: center;
-        gap: 80px;
-      }
+    <div class="content">
 
-      .photo img {
-        width: 320px;
-        border-radius: 10px;
-        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
-      }
+      <h1>Joshua A Kim</h1>
 
-      .content {
-        max-width: 550px;
-      }
+      <p class="subtitle">
+        MSW Candidate, 2028 · The Ohio State University
+      </p>
 
-      h1 {
-        font-size: 3rem;
-        margin-bottom: 0.4rem;
-      }
+      <p>
+        Welcome, and thank you for visiting.
+      </p>
 
-      .subtitle {
-        font-size: 1.2rem;
-        opacity: 0.85;
-        margin-bottom: 2rem;
-      }
+      <p>
+        More information about my practice will be available soon.
+      </p>
 
-      p {
-        line-height: 1.8;
-        font-size: 1.1rem;
-        margin-bottom: 1.4rem;
-      }
+      <p class="contact">
+        kimalexanderjoshua@gmail.com
+      </p>
 
-      .contact {
-        margin-top: 3rem;
-      }
+    </div>
 
-      @media (max-width: 900px) {
-        .wrapper {
-          flex-direction: column;
-          text-align: center;
-          gap: 50px;
-          padding: 60px 30px;
-        }
+  </main>
 
-        .photo img {
-          width: 260px;
-        }
-      }
-    </style>
-  </head>
+</body>
 
-  <body>
-    <main class="wrapper">
+<style>
+  /* Paste the CSS here */
 
-      <div class="photo">
-        <img src="/jak_shot.jpeg" alt="Joshua A Kim" />
-      </div>
+  body {
+  margin: 0;
+  background: #5F7FA6;
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
 
-      <div class="content">
-        <h1>Joshua A Kim</h1>
+/* ---------- Navigation ---------- */
 
-        <p class="subtitle">
-          Future home of my clinical practice.
-        </p>
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
 
-        <p>
-          Welcome, and thank you for visiting.
-        </p>
+  padding: 36px 0;
 
-        <p>
-          I am currently completing my MSW at The Ohio State University.<br />
-          More information about my practice will be available soon.
-        </p>
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: .03em;
+}
 
-        <p class="contact">
-          For all inquiries, please email:<br />
-          kimalexanderjoshua@gmail.com
-        </p>
-      </div>
+.navbar a {
+  color: rgba(255,255,255,.88);
+  text-decoration: none;
 
-    </main>
-  </body>
-</html>
+  transition: all .25s ease;
+}
+
+.navbar a:hover {
+  color: white;
+  transform: translateY(-1px);
+}
+
+/* ---------- Layout ---------- */
+
+.wrapper {
+  max-width: 1150px;
+
+  min-height: calc(100vh - 90px);
+
+  margin: 0 auto;
+
+  padding: 0 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 90px;
+}
+
+/* ---------- Portrait ---------- */
+
+.photo img {
+  width: 340px;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 18px 45px rgba(0,0,0,.18);
+}
+
+/* ---------- Text ---------- */
+
+.content {
+  max-width: 520px;
+}
+
+h1 {
+  font-size: 3.3rem;
+  font-weight: 500;
+
+  margin: 0;
+}
+
+.subtitle {
+  margin-top: 12px;
+  margin-bottom: 36px;
+
+  font-size: 1.15rem;
+
+  opacity: .82;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+
+  margin-bottom: 22px;
+}
+
+.contact {
+  margin-top: 42px;
+
+  font-weight: 500;
+
+  opacity: .92;
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 900px) {
+
+  .wrapper {
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 50px;
+
+    padding: 40px 28px 70px;
+  }
+
+  .photo img {
+    width: 260px;
+  }
+
+  .navbar {
+    gap: 2rem;
+    font-size: .95rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+}
+</style>
